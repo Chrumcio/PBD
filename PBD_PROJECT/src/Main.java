@@ -1,7 +1,22 @@
+import java.io.*;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    private List<String> listOfNames = new ArrayList<>();
+
+    public List<String> setListOfNames() throws IOException {
+        File file = new File("C:\\Users\\Mateusz\\Documents\\PBD_PROJECT\\src\\names.txt");
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        String name;
+        while((name = reader.readLine()) != null){
+            listOfNames.add(name);
+        }
+        return listOfNames;
+    }
+
+    public static void main(String[] args) throws SQLException, IOException {
         String url = "jdbc:postgresql://localhost/PBD_PROJECT";
         String user = "postgres";
         String password = "12Mark23";
