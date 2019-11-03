@@ -22,7 +22,10 @@ public class LosowanieDoBazy {
 	public static void addSpecjalizacja( int ile, String url, String user, String password)	{
 		
 	}
-	 
+    private static java.sql.Date convertUtilToSql(java.util.Date uDate) {
+        java.sql.Date sDate = new java.sql.Date(uDate.getTime());
+        return sDate;
+    }
 	 
 	public static void addRecepcjonistka( int ile, String url, String user, String password) throws IOException {
 

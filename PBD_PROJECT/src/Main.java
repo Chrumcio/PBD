@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Consty.CONST;
+import draw.MedicineDraw;
 
 
 public class Main {
@@ -11,7 +12,7 @@ public class Main {
 
     public static List<String> setListOfNames() throws IOException {
         File file = new File(CONST.namesUrl);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF8"));;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF8"));
         String name;
         while((name = reader.readLine()) != null){
             listOfNames.add(name);
@@ -27,7 +28,7 @@ public class Main {
         String password = CONST.haslo;
         Connection connection = DriverManager.getConnection(url,user,password);
         try (
-             PreparedStatement pst = connection.prepareStatement("SELECT * FROM gabinet");
+             PreparedStatement pst = connection.prepareStatement("SELECT * FROM lekarstwo");
              ResultSet rs = pst.executeQuery()) {
             while (rs.next()) {
                 System.out.print(rs.getInt(1));
@@ -42,7 +43,9 @@ public class Main {
         
         
         
-         LosowanieDoBazy.addRecepcjonistka(30, url, user, password);           
+         //LosowanieDoBazy.addRecepcjonistka(30, url, user, password);
+        //MedicineDraw medicineDraw = new MedicineDraw(url, user, password);
+        //medicineDraw.addMedicine(10);
          
         
         
