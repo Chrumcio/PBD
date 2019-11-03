@@ -1,6 +1,11 @@
 package Entity;
 
-import java.util.Date;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Date;
+
 
 public class Recepcjonistka {
     private int id;
@@ -19,7 +24,12 @@ public class Recepcjonistka {
         this.pesel = pesel;
     }
 
-    public int getId() {
+    public Recepcjonistka() {
+		// TODO Auto-generated constructor stub
+    	;
+	}
+
+	public int getId() {
         return id;
     }
 
@@ -77,5 +87,25 @@ public class Recepcjonistka {
                 ", adres='" + adres + '\'' +
                 ", pesel='" + pesel + '\'' +
                 '}';
+    }
+    
+    public void addRecepcjonistka(Connection con) {
+    	String query = "INSERT INTO recepcjonistka(idrecepcjonistki, nazwisko, imie, dataurodzenia, adres, pesel) VALUES(?,?,?,?,?,?)";
+    	/*
+    	try (PreparedStatement pst = con.prepareStatement(query)) {
+              pst.setInt(1, id);
+              pst.setString(2, nazwisko);
+              pst.setString(3, imie);
+              pst.setDate(4, dataUrodzenia);
+              pst.setString(5, adres);
+              pst.setString(6, pesel);
+              
+              pst.executeUpdate();
+
+          } catch (SQLException ex) {
+              ex.printStackTrace();
+          }
+          */
+    	System.out.println(this.toString());
     }
 }

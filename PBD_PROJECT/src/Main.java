@@ -7,15 +7,17 @@ import Consty.CONST;
 
 
 public class Main {
-    private List<String> listOfNames = new ArrayList<>();
+    private static List<String> listOfNames = new ArrayList<>();
 
-    public List<String> setListOfNames() throws IOException {
-        File file = new File("C:\\Users\\Mateusz\\Documents\\PBD_PROJECT\\src\\names.txt");
+    public static List<String> setListOfNames() throws IOException {
+        File file = new File(CONST.namesUrl);
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String name;
         while((name = reader.readLine()) != null){
             listOfNames.add(name);
+            System.out.println(name); 
         }
+        
         return listOfNames;
     }
 
@@ -25,7 +27,7 @@ public class Main {
         String password = CONST.haslo;
         Connection connection = DriverManager.getConnection(url,user,password);
         try (
-             PreparedStatement pst = connection.prepareStatement("SELECT * FROM specjalizacja");
+             PreparedStatement pst = connection.prepareStatement("SELECT * FROM gabinet");
              ResultSet rs = pst.executeQuery()) {
             while (rs.next()) {
                 System.out.print(rs.getInt(1));
@@ -35,12 +37,30 @@ public class Main {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-        System.out.printf("XXXXXXXXXXXXXXX");
+        
+        System.out.println("XXXXXXXXXXXXXXX");
+        
+        
+        
+         LosowanieDoBazy.addRecepcjonistka(3, url, user, password);           
+         
+        
+        
+        
+        
+        
+        
+        
+        
+        
 //
 //        int id = 6;
 //        String author = "Trygve Gulbranssen";
 //        String query = "INSERT INTO car(idcar,name) VALUES(?,?)";
 //
+        
+        
+        
 //        try (Connection con = DriverManager.getConnection(url, user, password);
 //             PreparedStatement pst = con.prepareStatement(query)) {
 //            pst.setInt(1, id);
