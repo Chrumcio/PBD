@@ -1,7 +1,11 @@
 package Entity;
 
 import java.math.BigInteger;
-import java.util.Date;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 
 public class Pacjent {
     private int id;
@@ -9,9 +13,9 @@ public class Pacjent {
     private String imie;
     private String pesel;
     private Date dataUrodzenia;
-    private BigInteger nrUbezpieczenia;
+    private Long nrUbezpieczenia;
 
-    public Pacjent(int id, String nazwisko, String imie, String pesel, Date dataUrodzenia, BigInteger nrUbezpieczenia) {
+    public Pacjent(int id, String nazwisko, String imie, String pesel, Date dataUrodzenia, Long nrUbezpieczenia) {
         this.id = id;
         this.nazwisko = nazwisko;
         this.imie = imie;
@@ -60,11 +64,11 @@ public class Pacjent {
         this.dataUrodzenia = dataUrodzenia;
     }
 
-    public BigInteger getNrUbezpieczenia() {
+    public Long getNrUbezpieczenia() {
         return nrUbezpieczenia;
     }
 
-    public void setNrUbezpieczenia(BigInteger nrUbezpieczenia) {
+    public void setNrUbezpieczenia(Long nrUbezpieczenia) {
         this.nrUbezpieczenia = nrUbezpieczenia;
     }
 
@@ -78,5 +82,20 @@ public class Pacjent {
                 ", dataUrodzenia=" + dataUrodzenia +
                 ", nrUbezpieczenia=" + nrUbezpieczenia +
                 '}';
+    }
+
+    public void addPatient(Connection connection) throws SQLException {
+        String query = "INSERT INTO pacjent(idpacjenta, nazwisko, imie, pesel, dataUrodzenia, numerUbezpieczenia)" +
+                "VALUES(?,?,?,?,?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
+        preparedStatement.setString(2, nazwisko);
+        preparedStatement.setString(3, imie);
+        preparedStatement.setString(4, pesel);
+        preparedStatement.setDate(5, dataUrodzenia);
+        preparedStatement.setLong(6, nrUbezpieczenia);
+        preparedStatement.executeUpdate();
+        System.out.println(this.toString());
+
     }
 }

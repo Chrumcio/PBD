@@ -2,9 +2,11 @@ import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import Consty.CONST;
 import draw.MedicineDraw;
+import draw.PatientDraw;
 
 
 public class Main {
@@ -46,6 +48,8 @@ public class Main {
          //LosowanieDoBazy.addRecepcjonistka(30, url, user, password);
         //MedicineDraw medicineDraw = new MedicineDraw(url, user, password);
         //medicineDraw.addMedicine(10);
+        PatientDraw patientDraw = new PatientDraw(url, user, password);
+        patientDraw.addPatient(10);
          
         
         
