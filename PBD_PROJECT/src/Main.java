@@ -11,7 +11,7 @@ public class Main {
 
     public static List<String> setListOfNames() throws IOException {
         File file = new File(CONST.namesUrl);
-        BufferedReader reader = new BufferedReader(new FileReader(file));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF8"));;
         String name;
         while((name = reader.readLine()) != null){
             listOfNames.add(name);
@@ -42,7 +42,7 @@ public class Main {
         
         
         
-         LosowanieDoBazy.addRecepcjonistka(3, url, user, password);           
+         LosowanieDoBazy.addRecepcjonistka(30, url, user, password);           
          
         
         

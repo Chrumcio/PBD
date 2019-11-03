@@ -65,7 +65,7 @@ public class LosowanieDoBazy {
 			a = r.nextInt(ulice.size());
 			adres+= ulice.get(a) + " ";
 			a = r.nextInt(100);
-			adres+= ulice.get(a);
+			adres+= a;
 			
 			String s="1950-01-01";
 			Date firstDate = Date.valueOf(s);
@@ -91,18 +91,39 @@ public class LosowanieDoBazy {
 			if(a<10)
 				pesel+="0";
 			pesel+=(new Integer(a)).toString();
-			pesel+="0";			// tu dodac plec
+			
+			a = r.nextInt(5);
+			
+			if(imie.charAt(imie.length()-1)=='a') {
+				a = 2*a;
+				String koncowka = nazwisko.substring(nazwisko.length()-3,nazwisko.length());
+				System.out.println(koncowka);
+				if(koncowka=="ski"||koncowka=="cki") {	
+					System.out.println("XXXXXXXXXXXX");
+					nazwisko = nazwisko.substring(0,nazwisko.length()-1) + "a";
+				}
+			}
+			else {
+				a=2*a+1;
+				String koncowka = nazwisko.substring(nazwisko.length()-3,nazwisko.length());
+				System.out.println(koncowka);
+				if(koncowka=="ska"||koncowka=="cka") {
+					System.out.println("XXXXXXXXXXXX");
+					nazwisko = nazwisko.substring(0,nazwisko.length()-1) + "i";
+				}
+			}
+
+			pesel+=(new Integer(a).toString());			
 			int last=0;
 			int[] value= {9,7,3,1,9,7,3,1,9,7};
 			for(int i=0;i<10;i++) {
-				
 				last+=value[i]*(Integer.parseInt(pesel.substring(i,i+1)));
 			}
 			
 			last=last%10;
 			pesel+=(new Integer(last)).toString();
 
-			Recepcjonistka recepcjonistka = new Recepcjonistka(id, imie, nazwisko, dataUrodzenia, adres, pesel);
+			Recepcjonistka recepcjonistka = new Recepcjonistka(id, nazwisko, imie, dataUrodzenia, adres, pesel);
 			
 		return recepcjonistka;
 		
