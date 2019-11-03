@@ -7,6 +7,7 @@ import java.util.Random;
 import Consty.CONST;
 import draw.MedicineDraw;
 import draw.PatientDraw;
+import draw.RecepcionistsDraw;
 
 
 public class Main {
@@ -24,7 +25,7 @@ public class Main {
         return listOfNames;
     }
 
-    public static void main(String[] args) throws SQLException, IOException {
+    public static void main(String[] args) throws SQLException, IOException { 
         String url = CONST.url;
         String user = CONST.user;
         String password = CONST.haslo;
@@ -45,11 +46,11 @@ public class Main {
         
         
         
-         //LosowanieDoBazy.addRecepcjonistka(30, url, user, password);
+        //RecepcionistsDraw.addRecepcjonistka(30, url, user, password);
         //MedicineDraw medicineDraw = new MedicineDraw(url, user, password);
         //medicineDraw.addMedicine(10);
-        PatientDraw patientDraw = new PatientDraw(url, user, password);
-        patientDraw.addPatient(10);
+        //PatientDraw patientDraw = new PatientDraw(url, user, password);
+        //patientDraw.addPatient(10);
          
         
         

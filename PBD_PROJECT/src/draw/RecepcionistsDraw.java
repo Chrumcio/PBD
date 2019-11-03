@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
+package draw;
+
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Date;
@@ -8,6 +7,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Calendar;
+import java.util.List;
 import java.util.Random;
 
 import Entity.Recepcjonistka;
@@ -16,7 +17,7 @@ import datafiles.Names;
 import datafiles.Streets;
 import datafiles.Surnames;
 
-public class LosowanieDoBazy {
+public class RecepcionistsDraw {
 	
 
 	public static void addSpecjalizacja( int ile, String url, String user, String password)	{
