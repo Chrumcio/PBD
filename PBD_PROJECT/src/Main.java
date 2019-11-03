@@ -3,6 +3,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import Consty.CONST;
+
+
 public class Main {
     private List<String> listOfNames = new ArrayList<>();
 
@@ -17,12 +20,12 @@ public class Main {
     }
 
     public static void main(String[] args) throws SQLException, IOException {
-        String url = "jdbc:postgresql://localhost/PBD_PROJECT";
-        String user = "postgres";
-        String password = "12Mark23";
+        String url = CONST.url;
+        String user = CONST.user;
+        String password = CONST.haslo;
         Connection connection = DriverManager.getConnection(url,user,password);
         try (
-             PreparedStatement pst = connection.prepareStatement("SELECT * FROM gabinet");
+             PreparedStatement pst = connection.prepareStatement("SELECT * FROM specjalizacja");
              ResultSet rs = pst.executeQuery()) {
             while (rs.next()) {
                 System.out.print(rs.getInt(1));
@@ -32,6 +35,7 @@ public class Main {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
+        System.out.printf("XXXXXXXXXXXXXXX");
 //
 //        int id = 6;
 //        String author = "Trygve Gulbranssen";
