@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Random;
 
@@ -16,15 +17,32 @@ import datafiles.Streets;
 import datafiles.Surnames;
 
 public class LosowanieDoBazy {
-	 private static java.sql.Date convertUtilToSql(java.util.Date uDate) {
-	        java.sql.Date sDate = new java.sql.Date(uDate.getTime());
-	        return sDate;
-	    }
+	
 
+	public static void addSpecjalizacja( int ile, String url, String user, String password)	{
+		
+	}
+	 
+	 
 	public static void addRecepcjonistka( int ile, String url, String user, String password) throws IOException {
+
 		try (Connection con = DriverManager.getConnection(url, user, password)){
-			for(int id=1;id<=ile;id++ ) {
-				Recepcjonistka recepcjonistka = randRecepcjonistka(id);
+			int lastId = 0;
+			try (
+		        PreparedStatement pst = con.prepareStatement("SELECT * FROM recepcjonistka");
+		        ResultSet rs = pst.executeQuery()) {
+		        while (rs.next()) {
+		                lastId = rs.getInt(1);
+		                
+		            }
+		        } catch (SQLException ex) {
+		            ex.printStackTrace();
+		        }
+			
+			
+			
+			for(int i=0;i<ile;i++ ) {
+				Recepcjonistka recepcjonistka = randRecepcjonistka(lastId+1);
 				recepcjonistka.addRecepcjonistka(con);
 			}
 		}
@@ -49,10 +67,7 @@ public class LosowanieDoBazy {
 	    String adres = "";
 	    String pesel="";
 		
-		
-		
-			
-			
+
 			Random r = new Random();
 			int a = r.nextInt(imiona.size());	
 			imie = imiona.get(a);

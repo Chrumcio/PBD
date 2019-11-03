@@ -1,0 +1,84 @@
+ginekolog
+stomatolog
+ortopeda
+chirurg
+dermatolog
+psycholog
+psychiatra
+laryngolog
+internista
+pediatra
+neurolog
+okulista
+endokrynolog
+fizjoterapeuta
+urolog
+kardiolog
+neurochirurg
+gastrolog
+psychoterapeuta
+dietetyk
+lekarz rodzinny
+onkolog
+radiolog
+alergolog
+ortodonta
+lekarz medycyny estetycznej
+reumatolog
+chirurg plastyczny
+pulmonolog
+chirurg naczyniowy
+diabetolog
+proktolog
+hematolog
+neurolog dzieci
+weterynarz
+terapeuta
+lekarz medycyny pracy
+logopeda
+nefrolog
+seksuolog
+anestezjolog
+lekarz chorób zakaźnych
+diagnostyk
+chirurg dziecięcy
+ortopeda dziecięcy
+chirurg szczękowy
+położna
+lekarz w trakcie specjalizacji
+lekarz rehabilitacji medycznej
+kardiolog dziecięcy
+psychiatra dziecięcy
+laryngolog dziecięcy
+gastrolog dziecięcy
+flebolog
+psycholog dziecięcy
+urolog dziecięcy
+immunolog
+audiolog, foniatra
+optometrysta
+specjalista medycyny naturalnej
+kardiochirurg
+chirurg stomatologiczny
+geriatra
+genetyk
+androlog
+stomatolog dziecięcy
+lekarz sportowy
+patomorfolog
+hepatolog
+homeopata
+okulista dziecięcy
+protetyk
+bariatra
+hipertensjolog
+biegły sądowy
+neonatolog
+higienistka stomatologiczna
+angiolog
+endokrynolog dziecięcy
+angiochirurg
+transplantolog
+lekarz medycyny ratunkowej
+histopatolog
+ginekologia dziecięca
