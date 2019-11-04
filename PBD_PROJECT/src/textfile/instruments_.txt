@@ -1,4 +1,4 @@
-Ampu³kostrzykawka
+AmpuÅ‚kostrzykawka
 Anomaloskop
 Aparat halo
 Aparat Ilizarowa
@@ -7,10 +7,10 @@ Artykulator
 Asystor
 Audiogram
 Audiometr
-Automatyczny defibrylator zewnêtrzny
+Automatyczny defibrylator zewnÄ™trzny
 Autostrzykawka
 Basen (naczynie)
-Biomateria³
+BiomateriaÅ‚
 Bomba kobaltowa
 Burdizzo
 Cefaly
@@ -18,7 +18,7 @@ Cell saver
 Cewnik Foleya
 Cewnik Swana-Ganza
 Cewnik Tenckhoffa
-Ci¹g³e pozaustrojowe natlenianie krwi
+CiÄ…gÅ‚e pozaustrojowe natlenianie krwi
 Combitube
 CPAP
 Defibrylator
@@ -34,38 +34,38 @@ Eza
 Fantom (medycyna)
 Glukometr
 Gruszka (medycyna)
-GwóŸdŸ chirurgiczny
+GwÃ³ÅºdÅº chirurgiczny
 Hak chirurgiczny
 Hak Farabeufa
-Ig³a (medycyna)
-Ig³a Veresa
-Imad³o chirurgiczne
+IgÅ‚a (medycyna)
+IgÅ‚a Veresa
+ImadÅ‚o chirurgiczne
 Inhalator
 Inkubator
 Insuflator
 Irygator
-Kaftan bezpieczeñstwa
-Kamizelka defibryluj¹ca
+Kaftan bezpieczeÅ„stwa
+Kamizelka defibrylujÄ…ca
 Kamizelka Kendricka
-Kaniula do¿ylna
-Kaniula têtnicza
+Kaniula doÅ¼ylna
+Kaniula tÄ™tnicza
 Kanka
-Kapsu³ka Crosby’ego
+KapsuÅ‚ka Crosbyâ€™ego
 Keratometr
 Keratoskop
 Kimograf
 Kleszczyki chirurgiczne
 Koflator
-Ko³o porodowe
+KoÅ‚o porodowe
 Komora dekompresyjna
 Komora inhalacyjna
 Koncentrator tlenu
 Kranioklast
-Krêpulec (opaska uciskowa)
-Krzese³ko kardiologiczne
-Krzes³o porodowe
+KrÄ™pulec (opaska uciskowa)
+KrzeseÅ‚ko kardiologiczne
+KrzesÅ‚o porodowe
 Kula (rehabilitacja)
-Kuloci¹g
+KulociÄ…g
 Laboratorium chipowe
 Lampa rentgenowska
 Lampa Wooda
@@ -73,16 +73,16 @@ Laseroterapia
 Maska krtaniowa
 Maska tlenowa
 Miednicomierz
-Miernik ciœnienia zwieracza ust prze³yku
+Miernik ciÅ›nienia zwieracza ust przeÅ‚yku
 Mikrotom
 Mikrotom laserowy
-M³otek neurologiczny
+MÅ‚otek neurologiczny
 Mokry opatrunek
-Monitorowanie EKG metod¹ Holtera
+Monitorowanie EKG metodÄ… Holtera
 Negatoskop
-Nosze miêkkie
-Nó¿ gamma
-Nó¿ Tobolda
+Nosze miÄ™kkie
+NÃ³Å¼ gamma
+NÃ³Å¼ Tobolda
 Obuwie ortopedyczne
 Oftalmodynamometr
 Oftalmoskop
@@ -98,54 +98,54 @@ Otoskop
 Palestezjometr
 Pas brzuszny
 Pessarium
-Pi³a oscylacyjna
-Pi³ka lekarska
+PiÅ‚a oscylacyjna
+PiÅ‚ka lekarska
 Pinceta
-P³ytka stymulacyjna
+PÅ‚ytka stymulacyjna
 Podoskop
-Podwójna parasolka Rashkinda
+PodwÃ³jna parasolka Rashkinda
 Pompa infuzyjna
 Pompa insulinowa
 Port naczyniowy
 Promiennik podczerwieni
 Proteza
 Proteza naczyniowa
-Przeciwwstrz¹sowe spodnie pneumatyczne
+PrzeciwwstrzÄ…sowe spodnie pneumatyczne
 Pulsoksymetr
 Pulsometr
 Respimat
 Respirator (medycyna)
 Resusci Anne
-Rêkawiczki medyczne
-Rozszerzad³o Hegara
+RÄ™kawiczki medyczne
+RozszerzadÅ‚o Hegara
 Rurka intubacyjna
 Rurka krtaniowa
 Rurka tracheotomijna
-Samorozprê¿alne metalowe stenty
-Separator komórkowy
+SamorozprÄ™Å¼alne metalowe stenty
+Separator komÃ³rkowy
 Sfigmomanometr
 Skalpel
 Spirometr
 Staza taktyczna
 Stetoskop
-Stetoskop po³o¿niczy
+Stetoskop poÅ‚oÅ¼niczy
 Strzykawka
-Strzykawka bezig³owa
-Szpatu³ka
+Strzykawka bezigÅ‚owa
+SzpatuÅ‚ka
 Sztyft do nosa
 Talerze amputacyjne
 Tampon
-Tonometr Schiotza
+Tonometr SchiÃ¸tza
 Tupfer
 Unguator
 Urometr
-W³ókno monofilament
-Worek samorozprê¿alny
-Wózek szpitalny
+WÅ‚Ã³kno monofilament
+Worek samorozprÄ™Å¼alny
+WÃ³zek szpitalny
 Wstrzykiwacz insuliny
 Wszczepialny rejestrator arytmii
 Zaawansowana symulacja medyczna
-Zewnêtrzny dren komorowy
-Zg³êbnik Lintona-Nachlasa
-Zg³êbnik Sengstakena-Blakemore’a
-¯elazne p³uco
+ZewnÄ™trzny dren komorowy
+ZgÅ‚Ä™bnik Lintona-Nachlasa
+ZgÅ‚Ä™bnik Sengstakena-Blakemoreâ€™a
+Å»elazne pÅ‚uco
