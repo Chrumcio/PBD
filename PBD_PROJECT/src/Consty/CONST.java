@@ -15,6 +15,10 @@ public class CONST {
 //	public static String statusUrl = "D:\\github\\PBD\\PBD_PROJECT\\src\\textfile\\status.txt";
 //	public static String typeOfVisitsUrl = "D:\\github\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfVisits.txt";
 
+//    public static String url = "jdbc:postgresql://localhost/przychodnia";
+//    public static String user = "postgres";
+//    public static String haslo="admin1234";
+
 	//Mateusz's Ludtke urls
 	public static String namesUrl="C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\names.txt";
 	public static String surnamesUrl="C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\surnames.txt";
@@ -46,4 +50,7 @@ public class CONST {
 //	public static String statusUrl = "C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\status.txt";
 //	public static String typeOfVisitsUrl = "C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfVisits.txt";
 //
+//    public static String url = "jdbc:postgresql://localhost/przychodnia";
+//    public static String user = "postgres";
+//    public static String haslo="admin1234";
 }
