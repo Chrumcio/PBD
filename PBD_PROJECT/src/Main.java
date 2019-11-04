@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Random;
 
 import Consty.CONST;
+import Entity.Lekarstwo;
+import datafiles.Medicines;
 import draw.*;
 
 
@@ -24,21 +26,33 @@ public class Main {
     }
 
     public static void main(String[] args) throws SQLException, IOException { 
-        String url = CONST.url;
-        String user = CONST.user;
-        String password = CONST.haslo;
-        Connection connection = DriverManager.getConnection(url,user,password);
-        try (
-             PreparedStatement pst = connection.prepareStatement("SELECT * FROM dostawca");
-             ResultSet rs = pst.executeQuery()) {
-            while (rs.next()) {
-                System.out.print(rs.getInt(1));
-                System.out.print(": ");
-                System.out.println(rs.getString(2));
-            }
-        } catch (SQLException ex) {
-            ex.printStackTrace();
+//        String url = CONST.url;
+//        String user = CONST.user;
+//        String password = CONST.haslo;
+        String url = "jdbc:postgresql://localhost/PBD_PROJECT";
+        String user = "postgres";
+
+        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost/PBD_PROJECT","postgres","12345678");
+        Medicines medicines = new Medicines();
+        List<String> medicinesList = medicines.getListOfMedicines();
+        for(int i=0;i<medicinesList.size();i++){
+            Lekarstwo lekarstwo = new Lekarstwo();
+            lekarstwo.setId(i);
+            int a = (int)(Math.random()*medicinesList.size());
+            lekarstwo.setNazwa(medicinesList.get(a));
+            lekarstwo.addLekarstwo(connection);
         }
+//        try (
+//             PreparedStatement pst = connection.prepareStatement("SELECT * FROM dostawca");
+//             ResultSet rs = pst.executeQuery()) {
+//            while (rs.next()) {
+//                System.out.print(rs.getInt(1));
+//                System.out.print(": ");
+//                System.out.println(rs.getString(2));
+//            }
+//        } catch (SQLException ex) {
+//            ex.printStackTrace();
+//        }
         
         System.out.println("XXXXXXXXXXXXXXX");
         
@@ -53,9 +67,9 @@ public class Main {
         //doctorDraw.addDoctor(10);
         //NurseDraw nurseDraw = new NurseDraw(url, user, password);
         //nurseDraw.addNurse(10);
-        ProviderDraw providerDraw = new ProviderDraw(url, user, password);
-        providerDraw.addProvider(10);
-        
+//        ProviderDraw providerDraw = new ProviderDraw(url, user, password);
+//        providerDraw.addProvider(10);
+//
         
         
         

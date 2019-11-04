@@ -9,6 +9,9 @@ public class Lekarstwo {
     private int id;
     private String nazwa;
 
+    public Lekarstwo() {
+    }
+
     public Lekarstwo(int id, String nazwa) {
         this.id = id;
         this.nazwa = nazwa;
