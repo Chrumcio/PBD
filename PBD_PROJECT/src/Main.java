@@ -66,8 +66,10 @@ public class Main {
         //doctorDraw.addDoctor(10);
         //NurseDraw nurseDraw = new NurseDraw(url, user, password);
         //nurseDraw.addNurse(10);
-        ProviderDraw providerDraw = new ProviderDraw(url, user, password);
-        providerDraw.addProvider(10);
+        //ProviderDraw providerDraw = new ProviderDraw(url, user, password);
+        //providerDraw.addProvider(10);
+        DrawRoom drawRoom = new DrawRoom(url, user, password);
+        drawRoom.addRoom(10);
 //
         
         

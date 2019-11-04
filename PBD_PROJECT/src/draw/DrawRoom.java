@@ -5,6 +5,7 @@ import datafiles.Rooms;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -23,7 +24,7 @@ public class DrawRoom {
 
     public void addRoom(int room_amount) throws SQLException {
         for (int i = 0; i < room_amount; i++) {
-
+            drawRoom().addGabinet(connection);
         }
     }
 
@@ -32,11 +33,12 @@ public class DrawRoom {
         List<Integer> room_numbers = getRoomList();
         AtomicBoolean found = new AtomicBoolean(false);
         while (!found.get()) {
+            found.set(true);
             room_number = random.ints(100, 399).findFirst().getAsInt();
             int finalRoom_number = room_number;
             room_numbers.stream().forEach(x -> {
                 if (x == finalRoom_number)
-                    found.set(true);
+                    found.set(false);
             });
         }
         int floor;
@@ -59,7 +61,7 @@ public class DrawRoom {
     private List<Integer> getRoomList() throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM gabinet");
         ResultSet resultSet = preparedStatement.executeQuery();
-        List<Integer> room_numbers = null;
+        List<Integer> room_numbers = new ArrayList<>();
         while (resultSet.next()) {
             room_numbers.add(resultSet.getInt(1));
         }
