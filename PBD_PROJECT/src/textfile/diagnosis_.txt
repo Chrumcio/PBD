@@ -99,13 +99,10 @@ B16 Ostre wirusowe zapalenie wątroby typu B
 B17 Inne ostre wirusowe zapalenie wątroby
 B18 Przewlekłe wirusowe zapalenie wątroby
 B19 Nieokreślone wirusowe zapalenie wątroby
-B20 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są choroby zakaźne
-i pasożytnicze
+B20 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są choroby zakaźne i pasożytnicze
 B21 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są nowotwory złośliwe
-B22 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są inne określone
-choroby
-B23 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są inne stany
-chorobowe
+B22 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są inne określone choroby
+B23 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], której skutkiem są inne stany chorobowe
 B24 Choroba wywołana przez ludzki wirus upośledzenia odporności [HIV], nieokreślona
 B25 Choroba wywołana przez wirus cytomegalii
 B26 Świnka [nagminne zapalenie ślinianek przyusznych]
@@ -206,8 +203,7 @@ C33 Nowotwór złośliwy tchawicy
 C34 Nowotwór złośliwy oskrzela i płuca
 C37 Nowotwór złośliwy grasicy
 C38 Nowotwór złośliwy serca, śródpiersia i opłucnej
-C39 Nowotwór złośliwy o innym i bliżej nieokreślonym umiejscowieniu w obrębie układu oddechowego
-i narządów klatki piersiowej
+C39 Nowotwór złośliwy o innym i bliżej nieokreślonym umiejscowieniu w obrębie układu oddechowego i narządów klatki piersiowej
 C40 Nowotwór złośliwy kości i chrząstki stawowej kończyn
 C41 Nowotwór złośliwy kości i chrząstki stawowej o innym i nieokreślonym umiejscowieniu
 C43 Czerniak złośliwy skóry
@@ -298,8 +294,7 @@ D34 Nowotwór niezłośliwy tarczycy
 D35 Nowotwór niezłośliwy innych i nieokreślonych gruczołów wydzielania wewnętrznego
 D36 Niezłośliwy nowotwór o innym i nieokreślonym umiejscowieniu
 D37 Nowotwór o niepewnym lub nieznanym charakterze jamy ustnej i narządów układu pokarmowego
-D38 Nowotwór o niepewnym lub nieznanym charakterze ucha środkowego, narządów układu oddechowego i klatki
-piersiowej
+D38 Nowotwór o niepewnym lub nieznanym charakterze ucha środkowego, narządów układu oddechowego i klatki piersiowej
 D39 Nowotwór o niepewnym lub nieznanym charakterze żeńskich narządów płciowych
 D40 Nowotwór o niepewnym lub nieznanym charakterze męskich narządów płciowych
 D41 Nowotwór o niepewnym lub nieznanym charakterze układu moczowego
@@ -308,8 +303,7 @@ D43 Nowotwór o niepewnym lub nieznanym charakterze mózgu i ośrodkowego układ
 D44 Nowotwór o niepewnym lub nieznanym charakterze gruczołów wydzielania wewnętrznego
 D45 Czerwienica prawdziwa
 D46 Zespoły mielodysplastyczne
-D47 Inne nowotwory o niepewnym lub nieznanym charakterze tkanki limfatycznej, układu krwiotwórczego
-i tkanek pokrewnych
+D47 Inne nowotwory o niepewnym lub nieznanym charakterze tkanki limfatycznej, układu krwiotwórczego i tkanek pokrewnych
 D48 Nowotwory o niepewnym lub nieznanym charakterze o innym i nieokreślonym umiejscowieniu
 D50 Niedokrwistość z niedoboru żelaza
 D51 Niedokrwistość z niedoboru witaminy B12
@@ -378,17 +372,13 @@ E35 Zaburzenia gruczołów wydzielania wewnętrznego w przebiegu chorób sklasyf
 F10 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem alkoholu
 F11 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem opioidów
 F12 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem kanabinoli
-F13 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem substancji uspokajających i
-nasennych
+F13 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem substancji uspokajających i nasennych
 F14 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem kokainy
-F15 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem innych substancji stymulujących,
-w tym kofeiny
+F15 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem innych substancji stymulujących, w tym kofeiny
 F16 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem halucynogenów
 F17 Zaburzenia psychiczne i zaburzenia zachowania spowodowane paleniem tytoniu
-F18 Zaburzenia psychiczne i zaburzenia zachowania spowodowane odurzaniem się lotnymi rozpuszczalnikami
-organicznymi
-F19 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem wielu narkotyków i innych
-substancji psychoaktywnych
+F18 Zaburzenia psychiczne i zaburzenia zachowania spowodowane odurzaniem się lotnymi rozpuszczalnikami organicznymi
+F19 Zaburzenia psychiczne i zaburzenia zachowania spowodowane używaniem wielu narkotyków i innych substancji psychoaktywnych
 F20 Schizofrenia
 F21 Zaburzenie schizotypowe
 F22 Uporczywe zaburzenia urojeniowe
@@ -399,15 +389,12 @@ F28 Inne nieorganiczne zaburzenia psychotyczne
 F29 Nieokreślona psychoza nieorganiczna
 G00 Bakteryjne zapalenie opon mózgowo-rdzeniowych, niesklasyfikowane gdzie indziej
 G01 Zapalenie opon mózgowo-rdzeniowych w przebiegu chorób sklasyfikowanych gdzie indziej
-G02 Zapalenie opon mózgowo-rdzeniowych w przebiegu innych chorób zakaźnych i pasożytniczych
-sklasyfikowanych gdzie indziej
+G02 Zapalenie opon mózgowo-rdzeniowych w przebiegu innych chorób zakaźnych i pasożytniczych sklasyfikowanych gdzie indziej
 G03 Zapalenie opon mózgowo-rdzeniowych wywołane przez inne i nieokreślone czynniki
 G04 Zapalenie mózgu, rdzenia kręgowego oraz mózgu i rdzenia kręgowego
-G05 Zapalenie mózgu, rdzenia kręgowego oraz mózgu i rdzenia kręgowego w przebiegu chorób sklasyfikowanych
-gdzie indziej
+G05 Zapalenie mózgu, rdzenia kręgowego oraz mózgu i rdzenia kręgowego w przebiegu chorób sklasyfikowanych gdzie indziej
 G06 Ropień i ziarniniak śródczaszkowy, w kanale kręgowym i rdzenia kręgowego
-G07 Ropień i ziarniniak śródczaszkowy, w kanale kręgowym i rdzenia kręgowego w przebiegu chorób
-sklasyfikowanych gdzie indziej
+G07 Ropień i ziarniniak śródczaszkowy, w kanale kręgowym i rdzenia kręgowego w przebiegu chorób sklasyfikowanych gdzie indziej
 G08 Zapalenie żył i zakrzepowe zapalenie żył śródczaszkowych i w kanale kręgowym
 G09 Następstwa zapalnych chorób ośrodkowego układu nerwowego
 G35 Stwardnienie rozsiane
