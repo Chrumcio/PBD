@@ -1,5 +1,10 @@
 package Entity;
 
+import java.awt.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class Gabinet {
 
     private int numer;
@@ -43,5 +48,16 @@ public class Gabinet {
                 ", pietro=" + pietro +
                 ", rodzaj='" + rodzaj + '\'' +
                 '}';
+    }
+
+    public void addGabinet(Connection connection) throws SQLException {
+        String query = "INSERT INTO gabinet(numergabinetu,pietro,rodzaj) " +
+                "VALUES(?,?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1,numer);
+        preparedStatement.setInt(2, pietro);
+        preparedStatement.setString(3, rodzaj);
+        preparedStatement.executeUpdate();
+        System.out.println(this.toString());
     }
 }

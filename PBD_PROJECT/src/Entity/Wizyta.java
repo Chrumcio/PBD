@@ -1,7 +1,6 @@
 package Entity;
 
-import java.sql.Time;
-import java.util.Date;
+import java.sql.*;
 
 public class Wizyta {
 
@@ -156,5 +155,28 @@ public class Wizyta {
                 ", idKarty=" + idKarty +
                 ", idDiagnostyki=" + idDiagnostyki +
                 '}';
+    }
+
+    public void addWizyta(Connection connection) throws SQLException {
+        String query = "INSERT INTO wizyta(idwizyty, datawizyty ,godzinawizyty ," +
+                "rodzajwizyty ,idstatusu ,idpielegniarki ,idlekarza ,numergabinetu ," +
+                "idrecepty ,idrecepcjonistki ,idpacjenta ,idkarty ,iddiagnostyki) " +
+                "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
+        preparedStatement.setDate(2, data);
+        preparedStatement.setTime(3,time);
+        preparedStatement.setString(4, rodzaj);
+        preparedStatement.setInt(5,idStatusu);
+        preparedStatement.setInt(6,idPielegniarki);
+        preparedStatement.setInt(7,idLekarza);
+        preparedStatement.setInt(8,gabinet);
+        preparedStatement.setInt(9,idRecepty);
+        preparedStatement.setInt(10,idRecepcjonistki);
+        preparedStatement.setInt(11,idPacjenta);
+        preparedStatement.setInt(12,idKarty);
+        preparedStatement.setInt(13,idDiagnostyki);
+        preparedStatement.executeUpdate();
+        System.out.println(this.toString());
     }
 }

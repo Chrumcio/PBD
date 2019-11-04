@@ -1,5 +1,9 @@
 package Entity;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class Specjalizacje_Lekarskie {
     private int idSpecj;
     private int idLek;
@@ -31,5 +35,14 @@ public class Specjalizacje_Lekarskie {
                 "idSpecj=" + idSpecj +
                 ", idLek=" + idLek +
                 '}';
+    }
+    public void addSpecjalizacje_Lekarskie(Connection connection) throws SQLException {
+        String query = "INSERT INTO specjalizacje_lekarskie(idlekarza, idspecjalizacji) " +
+                "VALUES(?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, idLek);
+        preparedStatement.setInt(2, idSpecj);
+        preparedStatement.executeUpdate();
+        System.out.println(this.toString());
     }
 }

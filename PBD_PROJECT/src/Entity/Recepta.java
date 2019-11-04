@@ -1,6 +1,9 @@
 package Entity;
 
-import java.util.Date;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class Recepta {
     private int id;
@@ -44,5 +47,16 @@ public class Recepta {
                 ", dataWystawienia=" + dataWystawienia +
                 ", dataWaznosci=" + dataWaznosci +
                 '}';
+    }
+
+    public void addRecepta(Connection connection) throws SQLException {
+        String query = "INSERT INTO recepta(idrecepty, datawystawienia, datawaznosci) " +
+                "VALUES(?,?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1, id);
+        preparedStatement.setDate(2, dataWystawienia);
+        preparedStatement.setDate(3, dataWaznosci);
+        preparedStatement.executeUpdate();
+        System.out.println(this.toString());
     }
 }
