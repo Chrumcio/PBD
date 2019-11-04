@@ -9,9 +9,9 @@ public class Dostawca {
     private int id;
     private String nazwa;
     private String adres;
-    private Long nip;
+    private String nip;
 
-    public Dostawca(int id, String nazwa, String adres, Long nip) {
+    public Dostawca(int id, String nazwa, String adres, String nip) {
         this.id = id;
         this.nazwa = nazwa;
         this.adres = adres;
@@ -42,11 +42,11 @@ public class Dostawca {
         this.adres = adres;
     }
 
-    public Long getNip() {
+    public String getNip() {
         return nip;
     }
 
-    public void setNip(Long nip) {
+    public void setNip(String nip) {
         this.nip = nip;
     }
 
@@ -67,7 +67,7 @@ public class Dostawca {
         preparedStatement.setInt(1,id);
         preparedStatement.setString(2,nazwa);
         preparedStatement.setString(3,adres);
-        preparedStatement.setLong(4,nip);
+        preparedStatement.setString(4,nip);
         preparedStatement.executeUpdate();
         System.out.println(this.toString());
     }

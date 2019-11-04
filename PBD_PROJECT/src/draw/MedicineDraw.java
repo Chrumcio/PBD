@@ -4,9 +4,7 @@ import Entity.Lekarstwo;
 import datafiles.Medicines;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.List;
 import java.util.Random;
 
@@ -14,7 +12,7 @@ public class MedicineDraw {
 
     private List<String> listOfMedicines = (new Medicines()).getListOfMedicines();
     private Connection connection;
-    private Random random ;
+    private Random random;
 
     public MedicineDraw(String url, String user, String password) throws SQLException, IOException {
         connection = DriverManager.getConnection(url, user, password);
@@ -22,8 +20,9 @@ public class MedicineDraw {
     }
 
     public void addMedicine(int medicine_amount) throws SQLException {
+        int lastId = getLastId();
         for (int i = 0; i < medicine_amount; i++) {
-            drawMedicine(i + 1).addLekarstwo(connection);
+            drawMedicine(lastId + i + 1).addLekarstwo(connection);
         }
     }
 
@@ -31,5 +30,15 @@ public class MedicineDraw {
         int random_index = random.nextInt(listOfMedicines.size());
         String nazwa = listOfMedicines.get(random_index);
         return new Lekarstwo(id, nazwa);
+    }
+
+    private int getLastId() throws SQLException {
+        int lastId = 0;
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM lekarstwo");
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            lastId = resultSet.getInt(1);
+        }
+        return lastId;
     }
 }

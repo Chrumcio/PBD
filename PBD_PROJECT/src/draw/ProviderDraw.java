@@ -35,7 +35,7 @@ public class ProviderDraw {
     private Dostawca drawProvider(int id) {
         String name = drawName();
         String address = drawAddress();
-        Long nip = drawNip();
+        String nip = drawNip();
 
         return new Dostawca(id, name, address, nip);
     }
@@ -54,13 +54,12 @@ public class ProviderDraw {
         return city + street + house_number;
     }
 
-    private Long drawNip() {
+    private String drawNip() {
         int min_boundary = 100000000;
         int max_boundary = 999999999;
         Long not_complete_nip = random.longs(min_boundary, max_boundary).findFirst().getAsLong();
         int last_number = getLastNipNumber(not_complete_nip);
-        String whole_nip = "" + not_complete_nip + last_number;
-        return Long.parseLong(whole_nip);
+        return  "" + not_complete_nip + last_number;
     }
 
     private int getLastNipNumber(Long not_complete_nip) {
