@@ -8,6 +8,9 @@ public class Przyrzad_Medyczny {
     private int id;
     private String nazwa;
 
+    public Przyrzad_Medyczny() {
+    }
+
     public Przyrzad_Medyczny(int id, String nazwa) {
         this.id = id;
         this.nazwa = nazwa;

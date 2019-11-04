@@ -9,6 +9,9 @@ public class Status {
     private int id;
     private String nazwa;
 
+    public Status() {
+    }
+
     public Status(int id, String nazwa) {
         this.id = id;
         this.nazwa = nazwa;

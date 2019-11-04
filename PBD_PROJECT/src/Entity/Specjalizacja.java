@@ -8,6 +8,9 @@ public class Specjalizacja {
     private int id;
     private String nazwa;
 
+    public Specjalizacja() {
+    }
+
     public Specjalizacja(int id, String nazwa) {
         this.id = id;
         this.nazwa = nazwa;

@@ -11,6 +11,9 @@ public class Gabinet {
     private int pietro;
     private String rodzaj;
 
+    public Gabinet() {
+    }
+
     public Gabinet(int numer, int pietro, String rodzaj) {
         this.numer = numer;
         this.pietro = pietro;

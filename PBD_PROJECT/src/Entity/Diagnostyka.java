@@ -9,6 +9,9 @@ public class Diagnostyka {
     private int idDiagnostyki;
     private String nazwaDiagnostyki;
 
+    public Diagnostyka() {
+    }
+
     public Diagnostyka(int idDiagnostyki, String nazwaDiagnostyki) {
         this.idDiagnostyki = idDiagnostyki;
         this.nazwaDiagnostyki = nazwaDiagnostyki;

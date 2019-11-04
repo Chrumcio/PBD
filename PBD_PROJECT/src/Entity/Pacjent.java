@@ -15,6 +15,9 @@ public class Pacjent {
     private Date dataUrodzenia;
     private Long nrUbezpieczenia;
 
+    public Pacjent() {
+    }
+
     public Pacjent(int id, String nazwisko, String imie, String pesel, Date dataUrodzenia, Long nrUbezpieczenia) {
         this.id = id;
         this.nazwisko = nazwisko;

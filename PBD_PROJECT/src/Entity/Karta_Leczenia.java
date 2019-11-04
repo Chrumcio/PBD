@@ -5,6 +5,9 @@ public class Karta_Leczenia {
     private int id;
     private String dolegliwosc;
 
+    public Karta_Leczenia() {
+    }
+
     public Karta_Leczenia(int id, String dolegliwosc) {
         this.id = id;
         this.dolegliwosc = dolegliwosc;

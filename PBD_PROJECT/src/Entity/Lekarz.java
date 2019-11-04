@@ -12,6 +12,9 @@ public class Lekarz {
     private String pesel;
     private int nrpwz;
 
+    public Lekarz() {
+    }
+
     public Lekarz(int id, String nazwisko, String imie, String pesel, int nrpwz) {
         this.id = id;
         this.nazwisko = nazwisko;

@@ -11,6 +11,9 @@ public class Dostawca {
     private String adres;
     private String nip;
 
+    public Dostawca() {
+    }
+
     public Dostawca(int id, String nazwa, String adres, String nip) {
         this.id = id;
         this.nazwa = nazwa;

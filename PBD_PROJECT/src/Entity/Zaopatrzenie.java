@@ -8,6 +8,9 @@ public class Zaopatrzenie {
     private int nrGabinetu;
     private int idPrzyrzadu;
 
+    public Zaopatrzenie() {
+    }
+
     public Zaopatrzenie(int nrGabinetu, int idPrzyrzadu) {
         this.nrGabinetu = nrGabinetu;
         this.idPrzyrzadu = idPrzyrzadu;

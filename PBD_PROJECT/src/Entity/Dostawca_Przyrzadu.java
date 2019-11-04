@@ -9,6 +9,9 @@ public class Dostawca_Przyrzadu {
     private int idPrzyrzadu;
     private int idDostawcy;
 
+    public Dostawca_Przyrzadu() {
+    }
+
     public Dostawca_Przyrzadu(int idPrzyrzadu, int idDostawcy) {
         this.idPrzyrzadu = idPrzyrzadu;
         this.idDostawcy = idDostawcy;

@@ -8,6 +8,9 @@ public class Specjalizacje_Lekarskie {
     private int idSpecj;
     private int idLek;
 
+    public Specjalizacje_Lekarskie() {
+    }
+
     public Specjalizacje_Lekarskie(int idSpecj, int idLek) {
         this.idSpecj = idSpecj;
         this.idLek = idLek;

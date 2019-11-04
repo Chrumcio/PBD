@@ -10,6 +10,9 @@ public class Recepta {
     private Date dataWystawienia;
     private Date dataWaznosci;
 
+    public Recepta() {
+    }
+
     public Recepta(int id, Date dataWystawienia, Date dataWaznosci) {
         this.id = id;
         this.dataWystawienia = dataWystawienia;

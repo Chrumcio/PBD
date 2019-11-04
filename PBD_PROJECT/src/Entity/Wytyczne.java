@@ -10,6 +10,9 @@ public class Wytyczne {
     private String iloscLeku;
     private String odplatnosc;
 
+    public Wytyczne() {
+    }
+
     public Wytyczne(int idRecepty, int idLekarstwa, String iloscLeku, String odplatnosc) {
         this.idRecepty = idRecepty;
         this.idLekarstwa = idLekarstwa;

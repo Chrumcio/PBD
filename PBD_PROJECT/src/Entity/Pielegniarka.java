@@ -13,6 +13,9 @@ public class Pielegniarka {
     private String adres;
     private String pesel;
 
+    public Pielegniarka() {
+    }
+
     public Pielegniarka(int id, String nazwisko, String imie, int nrpwz, String adres, String pesel) {
         this.id = id;
         this.nazwisko = nazwisko;

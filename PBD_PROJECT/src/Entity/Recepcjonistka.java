@@ -25,8 +25,6 @@ public class Recepcjonistka {
     }
 
     public Recepcjonistka() {
-		// TODO Auto-generated constructor stub
-    	;
 	}
 
 	public int getId() {

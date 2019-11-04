@@ -18,6 +18,9 @@ public class Wizyta {
     private int idKarty;
     private int idDiagnostyki;
 
+    public Wizyta() {
+    }
+
     public Wizyta(int id, Date data, Time time, String rodzaj, int idStatusu, int idPielegniarki, int idLekarza, int gabinet, int idRecepty, int idRecepcjonistki, int idPacjenta, int idKarty, int idDiagnostyki) {
         this.id = id;
         this.data = data;
