@@ -1,7 +1,9 @@
 package draw;
 
-import Entity.Lekarz;
+import Entity.Pielegniarka;
+import datafiles.Cities;
 import datafiles.Names;
+import datafiles.Streets;
 import datafiles.Surnames;
 
 import java.io.IOException;
@@ -10,32 +12,36 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
 
-public class DoctorDraw {
+public class NurseDraw {
 
     private List<String> names = (new Names()).setListOfNames();
     private List<String> surnames = (new Surnames()).setListOfSurnames();
+    private List<String> cities=(new Cities()).setListOfCities();
+    private List<String> streets=(new Streets()).setListOfStreets();
     private Connection connection;
     private Random random;
 
-    public DoctorDraw(String url,
-                      String user, String password) throws IOException, SQLException {
+    public NurseDraw(String url,
+                     String user, String password) throws IOException, SQLException {
         connection = DriverManager.getConnection(url, user, password);
         random = new Random();
     }
 
-    public void addDoctor(int doctor_amount) throws SQLException {
+    public void addNurse(int nurse_amount) throws SQLException {
         int lastId = getLastId();
-        for (int i = 0; i < doctor_amount; i++) {
-            drawDoctor(lastId + i + 1).addLekarz(connection);
+        for(int i=0; i<nurse_amount; i++){
+            drawNurse(lastId +i +1).addPielegniarka(connection);
         }
     }
 
-    private Lekarz drawDoctor(int id) {
+    private Pielegniarka drawNurse(int id){
         String name = drawName();
         String surname = drawSurname();
         String pesel = drawPesel(drawDate());
+        String address = drawAddress();
         int nrPwz = drawNrPwz();
-        return new Lekarz(id, surname, name, pesel, nrPwz);
+
+        return new Pielegniarka(id, surname, name, nrPwz, address, pesel);
     }
 
     private String drawName() {
@@ -46,6 +52,15 @@ public class DoctorDraw {
     private String drawSurname() {
         int random_index_surnames = random.nextInt(surnames.size());
         return surnames.get(random_index_surnames);
+    }
+
+    private String drawAddress(){
+        int random_cities_index = random.nextInt(cities.size());
+        int random_streets_index = random.nextInt(streets.size());
+        int house_number = random.nextInt(100);
+        String city = cities.get(random_cities_index);
+        String street = streets.get(random_streets_index);
+        return city + street + house_number;
     }
 
     private String drawPesel(Date birthDate) {
@@ -79,7 +94,6 @@ public class DoctorDraw {
         int max_boundary = 9999999;
         return random.ints(min_boundary, max_boundary).findFirst().getAsInt();
     }
-
 
     private static java.sql.Date convertUtilToSql(java.util.Date uDate) {
         java.sql.Date sDate = new java.sql.Date(uDate.getTime());

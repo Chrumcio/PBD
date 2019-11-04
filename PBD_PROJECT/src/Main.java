@@ -5,10 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import Consty.CONST;
-import draw.DoctorDraw;
-import draw.MedicineDraw;
-import draw.PatientDraw;
-import draw.RecepcionistsDraw;
+import draw.*;
 
 
 public class Main {
@@ -32,7 +29,7 @@ public class Main {
         String password = CONST.haslo;
         Connection connection = DriverManager.getConnection(url,user,password);
         try (
-             PreparedStatement pst = connection.prepareStatement("SELECT * FROM lekarstwo");
+             PreparedStatement pst = connection.prepareStatement("SELECT * FROM pielegniarka");
              ResultSet rs = pst.executeQuery()) {
             while (rs.next()) {
                 System.out.print(rs.getInt(1));
@@ -54,7 +51,8 @@ public class Main {
         //patientDraw.addPatient(10);
         //DoctorDraw  doctorDraw = new DoctorDraw(url, user, password);
         //doctorDraw.addDoctor(10);
-         
+        //NurseDraw nurseDraw = new NurseDraw(url, user, password);
+        //nurseDraw.addNurse(10);
         
         
         

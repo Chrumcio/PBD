@@ -1,5 +1,9 @@
 package Entity;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class Pielegniarka {
 
     private int id;
@@ -7,9 +11,9 @@ public class Pielegniarka {
     private String imie;
     private int nrpwz;
     private String adres;
-    private int pesel;
+    private String pesel;
 
-    public Pielegniarka(int id, String nazwisko, String imie, int nrpwz, String adres, int pesel) {
+    public Pielegniarka(int id, String nazwisko, String imie, int nrpwz, String adres, String pesel) {
         this.id = id;
         this.nazwisko = nazwisko;
         this.imie = imie;
@@ -58,11 +62,11 @@ public class Pielegniarka {
         this.adres = adres;
     }
 
-    public int getPesel() {
+    public String getPesel() {
         return pesel;
     }
 
-    public void setPesel(int pesel) {
+    public void setPesel(String pesel) {
         this.pesel = pesel;
     }
 
@@ -76,5 +80,19 @@ public class Pielegniarka {
                 ", adres='" + adres + '\'' +
                 ", pesel=" + pesel +
                 '}';
+    }
+
+    public void addPielegniarka(Connection connection) throws SQLException {
+        String query = "INSERT INTO pielegniarka(idpielegniarki, nazwisko, imie, nrpwz, adres, pesel)" +
+                "VALUES(?,?,?,?,?,?)";
+        PreparedStatement preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setInt(1,id);
+        preparedStatement.setString(2,nazwisko);
+        preparedStatement.setString(3,imie);
+        preparedStatement.setInt(4, nrpwz);
+        preparedStatement.setString(5,adres);
+        preparedStatement.setString(6,pesel);
+        preparedStatement.executeUpdate();
+        System.out.println(this.toString());
     }
 }
