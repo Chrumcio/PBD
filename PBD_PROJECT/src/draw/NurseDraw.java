@@ -102,7 +102,7 @@ public class NurseDraw {
 
     private int getLastId() throws SQLException {
         int lastId = 0;
-        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM lekarz");
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM pielegniarka");
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()) {
             lastId = resultSet.getInt(1);

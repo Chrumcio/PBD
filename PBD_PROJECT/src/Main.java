@@ -29,7 +29,7 @@ public class Main {
         String password = CONST.haslo;
         Connection connection = DriverManager.getConnection(url,user,password);
         try (
-             PreparedStatement pst = connection.prepareStatement("SELECT * FROM pielegniarka");
+             PreparedStatement pst = connection.prepareStatement("SELECT * FROM dostawca");
              ResultSet rs = pst.executeQuery()) {
             while (rs.next()) {
                 System.out.print(rs.getInt(1));
@@ -53,6 +53,8 @@ public class Main {
         //doctorDraw.addDoctor(10);
         //NurseDraw nurseDraw = new NurseDraw(url, user, password);
         //nurseDraw.addNurse(10);
+        ProviderDraw providerDraw = new ProviderDraw(url, user, password);
+        providerDraw.addProvider(10);
         
         
         
