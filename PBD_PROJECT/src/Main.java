@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import Consty.CONST;
+import draw.DoctorDraw;
 import draw.MedicineDraw;
 import draw.PatientDraw;
 import draw.RecepcionistsDraw;
@@ -51,6 +52,8 @@ public class Main {
         //medicineDraw.addMedicine(10);
         //PatientDraw patientDraw = new PatientDraw(url, user, password);
         //patientDraw.addPatient(10);
+        //DoctorDraw  doctorDraw = new DoctorDraw(url, user, password);
+        //doctorDraw.addDoctor(10);
          
         
         
