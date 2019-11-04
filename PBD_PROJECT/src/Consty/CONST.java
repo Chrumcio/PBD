@@ -14,7 +14,7 @@ public class CONST {
 //	public static String providerUrl = "D:\\github\\PBD\\PBD_PROJECT\\src\\textfile\\provider.txt";
 //	public static String statusUrl = "D:\\github\\PBD\\PBD_PROJECT\\src\\textfile\\status.txt";
 //	public static String typeOfVisitsUrl = "D:\\github\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfVisits.txt";
-
+	//public static String typeOfRoomUrl = "D:\\github\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfRooms.txt";
 //    public static String url = "jdbc:postgresql://localhost/przychodnia";
 //    public static String user = "postgres";
 //    public static String haslo="admin1234";
@@ -31,6 +31,7 @@ public class CONST {
 	public static String providerUrl = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\provider.txt";
 	public static String statusUrl = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\status.txt";
 	public static String typeOfVisitsUrl = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfVisits.txt";
+	public static String typeOfRoomUrl = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfRooms.txt";
 	
 	//Mateusz L
 	public static String url = "jdbc:postgresql://localhost/przychodnia";
@@ -49,6 +50,7 @@ public class CONST {
 //	public static String providerUrl = "C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\provider.txt";
 //	public static String statusUrl = "C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\status.txt";
 //	public static String typeOfVisitsUrl = "C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfVisits.txt";
+    //public static String typeOfRoomUrl = "C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfRooms.txt";
 //
 //    public static String url = "jdbc:postgresql://localhost/przychodnia";
 //    public static String user = "postgres";
