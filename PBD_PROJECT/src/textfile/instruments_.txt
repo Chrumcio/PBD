@@ -1,0 +1,151 @@
+Ampu³kostrzykawka
+Anomaloskop
+Aparat halo
+Aparat Ilizarowa
+Aparat rentgenowski
+Artykulator
+Asystor
+Audiogram
+Audiometr
+Automatyczny defibrylator zewnêtrzny
+Autostrzykawka
+Basen (naczynie)
+Biomateria³
+Bomba kobaltowa
+Burdizzo
+Cefaly
+Cell saver
+Cewnik Foleya
+Cewnik Swana-Ganza
+Cewnik Tenckhoffa
+Ci¹g³e pozaustrojowe natlenianie krwi
+Combitube
+CPAP
+Defibrylator
+Deska ortopedyczna
+Diafanoskop
+Drut Kirschnera
+Egzoftalometr Hertla
+Elektrokauter
+EpiPen
+Ergometr
+Estezjometr
+Eza
+Fantom (medycyna)
+Glukometr
+Gruszka (medycyna)
+GwóŸdŸ chirurgiczny
+Hak chirurgiczny
+Hak Farabeufa
+Ig³a (medycyna)
+Ig³a Veresa
+Imad³o chirurgiczne
+Inhalator
+Inkubator
+Insuflator
+Irygator
+Kaftan bezpieczeñstwa
+Kamizelka defibryluj¹ca
+Kamizelka Kendricka
+Kaniula do¿ylna
+Kaniula têtnicza
+Kanka
+Kapsu³ka Crosby’ego
+Keratometr
+Keratoskop
+Kimograf
+Kleszczyki chirurgiczne
+Koflator
+Ko³o porodowe
+Komora dekompresyjna
+Komora inhalacyjna
+Koncentrator tlenu
+Kranioklast
+Krêpulec (opaska uciskowa)
+Krzese³ko kardiologiczne
+Krzes³o porodowe
+Kula (rehabilitacja)
+Kuloci¹g
+Laboratorium chipowe
+Lampa rentgenowska
+Lampa Wooda
+Laseroterapia
+Maska krtaniowa
+Maska tlenowa
+Miednicomierz
+Miernik ciœnienia zwieracza ust prze³yku
+Mikrotom
+Mikrotom laserowy
+M³otek neurologiczny
+Mokry opatrunek
+Monitorowanie EKG metod¹ Holtera
+Negatoskop
+Nosze miêkkie
+Nó¿ gamma
+Nó¿ Tobolda
+Obuwie ortopedyczne
+Oftalmodynamometr
+Oftalmoskop
+Opaska uciskowa
+Opatrunek
+Opatrunek gipsowy
+Opatrunek indywidualny
+Opatrunek uciskowy
+Orchidometr
+Orteza
+Ortopantomograf
+Otoskop
+Palestezjometr
+Pas brzuszny
+Pessarium
+Pi³a oscylacyjna
+Pi³ka lekarska
+Pinceta
+P³ytka stymulacyjna
+Podoskop
+Podwójna parasolka Rashkinda
+Pompa infuzyjna
+Pompa insulinowa
+Port naczyniowy
+Promiennik podczerwieni
+Proteza
+Proteza naczyniowa
+Przeciwwstrz¹sowe spodnie pneumatyczne
+Pulsoksymetr
+Pulsometr
+Respimat
+Respirator (medycyna)
+Resusci Anne
+Rêkawiczki medyczne
+Rozszerzad³o Hegara
+Rurka intubacyjna
+Rurka krtaniowa
+Rurka tracheotomijna
+Samorozprê¿alne metalowe stenty
+Separator komórkowy
+Sfigmomanometr
+Skalpel
+Spirometr
+Staza taktyczna
+Stetoskop
+Stetoskop po³o¿niczy
+Strzykawka
+Strzykawka bezig³owa
+Szpatu³ka
+Sztyft do nosa
+Talerze amputacyjne
+Tampon
+Tonometr Schiotza
+Tupfer
+Unguator
+Urometr
+W³ókno monofilament
+Worek samorozprê¿alny
+Wózek szpitalny
+Wstrzykiwacz insuliny
+Wszczepialny rejestrator arytmii
+Zaawansowana symulacja medyczna
+Zewnêtrzny dren komorowy
+Zg³êbnik Lintona-Nachlasa
+Zg³êbnik Sengstakena-Blakemore’a
+¯elazne p³uco
