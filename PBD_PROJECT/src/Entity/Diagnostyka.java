@@ -6,22 +6,22 @@ import java.sql.SQLException;
 
 public class Diagnostyka {
 
-    private int idDiagnostyki;
+    private String idDiagnostyki;
     private String nazwaDiagnostyki;
 
     public Diagnostyka() {
     }
 
-    public Diagnostyka(int idDiagnostyki, String nazwaDiagnostyki) {
+    public Diagnostyka(String idDiagnostyki, String nazwaDiagnostyki) {
         this.idDiagnostyki = idDiagnostyki;
         this.nazwaDiagnostyki = nazwaDiagnostyki;
     }
 
-    public int getIdDiagnostyki() {
+    public String getIdDiagnostyki() {
         return idDiagnostyki;
     }
 
-    public void setIdDiagnostyki(int idDiagnostyki) {
+    public void setIdDiagnostyki(String idDiagnostyki) {
         this.idDiagnostyki = idDiagnostyki;
     }
 
@@ -45,7 +45,7 @@ public class Diagnostyka {
         String query = "INSERT INTO diagnostyka(iddiagnostyki, nazwadiagnostyki)" +
                 "VALUES(?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
-        preparedStatement.setInt(1,idDiagnostyki);
+        preparedStatement.setString(1,idDiagnostyki);
         preparedStatement.setString(2, nazwaDiagnostyki);
         preparedStatement.executeUpdate();
         System.out.println(this.toString());

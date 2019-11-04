@@ -15,13 +15,14 @@ public class Wizyta {
     private int idRecepty;
     private int idRecepcjonistki;
     private int idPacjenta;
-    private int idKarty;
+    private String idKarty;
     private int idDiagnostyki;
+    private String komenatrz;
 
     public Wizyta() {
     }
 
-    public Wizyta(int id, Date data, Time time, String rodzaj, int idStatusu, int idPielegniarki, int idLekarza, int gabinet, int idRecepty, int idRecepcjonistki, int idPacjenta, int idKarty, int idDiagnostyki) {
+    public Wizyta(int id, Date data, Time time, String rodzaj, int idStatusu, int idPielegniarki, int idLekarza, int gabinet, int idRecepty, int idRecepcjonistki, int idPacjenta, String idKarty, int idDiagnostyki, String komenatrz) {
         this.id = id;
         this.data = data;
         this.time = time;
@@ -35,6 +36,7 @@ public class Wizyta {
         this.idPacjenta = idPacjenta;
         this.idKarty = idKarty;
         this.idDiagnostyki = idDiagnostyki;
+        this.komenatrz = komenatrz;
     }
 
     public int getId() {
@@ -125,12 +127,20 @@ public class Wizyta {
         this.idPacjenta = idPacjenta;
     }
 
-    public int getIdKarty() {
+    public String getIdKarty() {
         return idKarty;
     }
 
-    public void setIdKarty(int idKarty) {
+    public void setIdKarty(String idKarty) {
         this.idKarty = idKarty;
+    }
+
+    public String getKomenatrz() {
+        return komenatrz;
+    }
+
+    public void setKomenatrz(String komenatrz) {
+        this.komenatrz = komenatrz;
     }
 
     public int getIdDiagnostyki() {
@@ -177,7 +187,7 @@ public class Wizyta {
         preparedStatement.setInt(9,idRecepty);
         preparedStatement.setInt(10,idRecepcjonistki);
         preparedStatement.setInt(11,idPacjenta);
-        preparedStatement.setInt(12,idKarty);
+        preparedStatement.setString(12,idKarty);
         preparedStatement.setInt(13,idDiagnostyki);
         preparedStatement.executeUpdate();
         System.out.println(this.toString());
