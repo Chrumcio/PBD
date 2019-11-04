@@ -45,8 +45,10 @@ public class DrawRoom {
         switch (Integer.toString(room_number).charAt(0)) {
             case '1':
                 floor = 0;
+                break;
             case '2':
                 floor = 1;
+                break;
             case '3':
                 floor = 2;
                 break;
