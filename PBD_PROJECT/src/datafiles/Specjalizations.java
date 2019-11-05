@@ -14,7 +14,7 @@ import Consty.CONST;
 public class Specjalizations {
     private List<String> listOfCities = new ArrayList<>();
 
-    public List<String> setListOfSpecjalizations() throws IOException {
+    public List<String> getListOfSpecjalizations() throws IOException {
         File file = new File(CONST.specjalizationsUrl);
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF8"));;
         String specjalization;
