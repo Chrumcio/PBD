@@ -15,7 +15,7 @@ public class Wizyta {
     private int idRecepty;
     private int idRecepcjonistki;
     private int idPacjenta;
-    private int idDiagnostyki;
+    private String idDiagnostyki;
     private String komenatrz;
 
     public Wizyta() {
@@ -23,7 +23,7 @@ public class Wizyta {
 
     public Wizyta(int id, Date data, Time time, String rodzaj, int idStatusu, int idPielegniarki, int idLekarza,
                   int gabinet, int idRecepty, int idRecepcjonistki, int idPacjenta
-            , int idDiagnostyki, String komenatrz) {
+            , String idDiagnostyki, String komenatrz) {
         this.id = id;
         this.data = data;
         this.time = time;
@@ -135,11 +135,11 @@ public class Wizyta {
         this.komenatrz = komenatrz;
     }
 
-    public int getIdDiagnostyki() {
+    public String getIdDiagnostyki() {
         return idDiagnostyki;
     }
 
-    public void setIdDiagnostyki(int idDiagnostyki) {
+    public void setIdDiagnostyki(String idDiagnostyki) {
         this.idDiagnostyki = idDiagnostyki;
     }
 
@@ -178,7 +178,7 @@ public class Wizyta {
         preparedStatement.setInt(9,idRecepty);
         preparedStatement.setInt(10,idRecepcjonistki);
         preparedStatement.setInt(11,idPacjenta);
-        preparedStatement.setInt(12,idDiagnostyki);
+        preparedStatement.setString(12,idDiagnostyki);
         preparedStatement.setString(13, komenatrz);
         preparedStatement.executeUpdate();
         System.out.println(this.toString());

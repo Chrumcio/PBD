@@ -18,7 +18,7 @@ public class VisitDraw {
     private List<Integer> prescription_list;
     private List<Integer> receptionist_list;
     private List<Integer> patient_list;
-    private List<Integer> diagnostic_list;
+    private List<String> diagnostic_list;
     private List<String> type_of_visit;
     private List<Integer> room_list;
 
@@ -63,7 +63,7 @@ public class VisitDraw {
         int doctor = doctor_list.get(random_doctor_index);
         int patient = patient_list.get(random_patient_index);
         int nurse = nurse_list.get(random_nurse_index);
-        int diagnostic = diagnostic_list.get(random_diagnostic_index);
+        String diagnostic = diagnostic_list.get(random_diagnostic_index);
         int status = status_list.get(random_status_index);
         int prescription = prescription_list.get(random_prescription_index);
         int receptionist = receptionist_list.get(random_receptionist_index);
@@ -142,12 +142,12 @@ public class VisitDraw {
         }
         return receptionist_id;
     }
-    private List<Integer> getDiagnosticList() throws SQLException {
+    private List<String> getDiagnosticList() throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM diagnostyka");
         ResultSet resultSet = preparedStatement.executeQuery();
-        List<Integer> diagnostic_id = new ArrayList<>();
+        List<String> diagnostic_id = new ArrayList<>();
         while (resultSet.next()) {
-            diagnostic_id.add(resultSet.getInt(1));
+            diagnostic_id.add(resultSet.getString(1));
         }
         return diagnostic_id;
     }
