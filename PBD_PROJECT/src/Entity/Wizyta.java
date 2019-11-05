@@ -15,14 +15,15 @@ public class Wizyta {
     private int idRecepty;
     private int idRecepcjonistki;
     private int idPacjenta;
-    private String idKarty;
     private int idDiagnostyki;
     private String komenatrz;
 
     public Wizyta() {
     }
 
-    public Wizyta(int id, Date data, Time time, String rodzaj, int idStatusu, int idPielegniarki, int idLekarza, int gabinet, int idRecepty, int idRecepcjonistki, int idPacjenta, String idKarty, int idDiagnostyki, String komenatrz) {
+    public Wizyta(int id, Date data, Time time, String rodzaj, int idStatusu, int idPielegniarki, int idLekarza,
+                  int gabinet, int idRecepty, int idRecepcjonistki, int idPacjenta
+            , int idDiagnostyki, String komenatrz) {
         this.id = id;
         this.data = data;
         this.time = time;
@@ -34,7 +35,6 @@ public class Wizyta {
         this.idRecepty = idRecepty;
         this.idRecepcjonistki = idRecepcjonistki;
         this.idPacjenta = idPacjenta;
-        this.idKarty = idKarty;
         this.idDiagnostyki = idDiagnostyki;
         this.komenatrz = komenatrz;
     }
@@ -127,14 +127,6 @@ public class Wizyta {
         this.idPacjenta = idPacjenta;
     }
 
-    public String getIdKarty() {
-        return idKarty;
-    }
-
-    public void setIdKarty(String idKarty) {
-        this.idKarty = idKarty;
-    }
-
     public String getKomenatrz() {
         return komenatrz;
     }
@@ -165,7 +157,6 @@ public class Wizyta {
                 ", idRecepty=" + idRecepty +
                 ", idRecepcjonistki=" + idRecepcjonistki +
                 ", idPacjenta=" + idPacjenta +
-                ", idKarty=" + idKarty +
                 ", idDiagnostyki=" + idDiagnostyki +
                 '}';
     }
@@ -173,7 +164,7 @@ public class Wizyta {
     public void addWizyta(Connection connection) throws SQLException {
         String query = "INSERT INTO wizyta(idwizyty, datawizyty ,godzinawizyty ," +
                 "rodzajwizyty ,idstatusu ,idpielegniarki ,idlekarza ,numergabinetu ," +
-                "idrecepty ,idrecepcjonistki ,idpacjenta ,idkarty ,iddiagnostyki) " +
+                "idrecepty ,idrecepcjonistki ,idpacjenta,iddiagnostyki, komentarz) " +
                 "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setInt(1, id);
@@ -187,8 +178,8 @@ public class Wizyta {
         preparedStatement.setInt(9,idRecepty);
         preparedStatement.setInt(10,idRecepcjonistki);
         preparedStatement.setInt(11,idPacjenta);
-        preparedStatement.setString(12,idKarty);
-        preparedStatement.setInt(13,idDiagnostyki);
+        preparedStatement.setInt(12,idDiagnostyki);
+        preparedStatement.setString(13, komenatrz);
         preparedStatement.executeUpdate();
         System.out.println(this.toString());
     }
