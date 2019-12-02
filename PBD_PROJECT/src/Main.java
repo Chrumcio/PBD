@@ -9,6 +9,7 @@ import Consty.CONST;
 import Entity.*;
 import datafiles.Medicines;
 import draw.*;
+import update.UpdateVisit;
 
 
 public class Main {
@@ -48,7 +49,7 @@ public class Main {
     }
 
     public static void setAmount() throws IOException{
-        File file = new File("C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\amountOfMedicine.txt");
+        File file = new File(CONST.amountOfMedicine);
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
         String line;
         while((line = reader.readLine()) != null){
@@ -57,7 +58,7 @@ public class Main {
     }
 
     public static void setPercent() throws IOException{
-        File file = new File("C:\\Users\\Mateusz\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\Percents.txt");
+        File file = new File(CONST.Percents);
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
         String line;
         while((line = reader.readLine()) != null){
@@ -70,6 +71,10 @@ public class Main {
         String user = CONST.user;
         String password = CONST.haslo;
         Connection connection = DriverManager.getConnection(url,user,password);
+
+        UpdateVisit updateVisit = new UpdateVisit(connection);
+        Date date = new Date(2012,12,12);
+        updateVisit.updateWizytaDate(1,date);
 //        PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM przyrzad_medyczny");
 //        preparedStatement.execute();
 
@@ -85,19 +90,22 @@ public class Main {
 //        patientDraw.addPatient(50000);
 //        ProviderDraw providerDraw = new ProviderDraw(url,user,password);
 //        providerDraw.addProvider(20);
-//        RecepcionistsDraw.randRecepcjonistka(20);
+
+//        RecepcionistsDraw.addRecepcjonistka(20, url, user, password);
+//
+//
 //        setListOfDiagnosis();
-////        for(int i=0;i<800;i++) {
-////            Diagnostyka diagnostyka = new Diagnostyka();
-////            int rand = (int) (Math.random()*899)+1;
-////            try {
-////                diagnostyka.setIdDiagnostyki(listOfCodes.get(rand));
-////                diagnostyka.setNazwaDiagnostyki(listOfNames.get(rand));
-////                diagnostyka.addDiagnostyka(connection);
-////            }catch (Exception e){
-////
-////            }
-////        }
+//        for(int i=0;i<800;i++) {
+//            Diagnostyka diagnostyka = new Diagnostyka();
+//            int rand = (int) (Math.random()*899)+1;
+//            try {
+//                diagnostyka.setIdDiagnostyki(listOfCodes.get(rand));
+//                diagnostyka.setNazwaDiagnostyki(listOfNames.get(rand));
+//                diagnostyka.addDiagnostyka(connection);
+//            }catch (Exception e){
+//
+//            }
+//        }
 //        setListOfInstruments();
 //        for(int i=1;i<listOfInstumentsName.size();i++){
 //            Przyrzad_Medyczny przyrzadMedyczny = new Przyrzad_Medyczny();
@@ -124,7 +132,7 @@ public class Main {
 //            status.setNazwa(listofStatus.get(i));
 //            status.addStatus(connection);
 //        }
-
+//
 //        Dostawca_Przyrzadu dostawcaPrzyrzadu = new Dostawca_Przyrzadu();
 //        for(int i=1;i<1000;i++) {
 //            try {
@@ -145,21 +153,24 @@ public class Main {
 //
 //            }
 //        }
-        setAmount();
-        setPercent();
-        Wytyczne wytyczne = new Wytyczne();
-        for(int i=1;i<10000;i++) {
-            try {
-                int lek = (int) (Math.random() * 599 + 1);
-                wytyczne.setIdLekarstwa(lek);
-                int rec = (int) (Math.random() * 14000 + 1);
-                wytyczne.setIdRecepty(rec);
-                wytyczne.setIloscLeku(amount.get((int) (Math.random() * 39 + 1)));
-                wytyczne.setOdplatnosc(percent.get((int) (Math.random() * 19 + 1)));
-                wytyczne.addWytyczne(connection);
-            }catch (Exception e){
+//        setAmount();
+//        setPercent();
+//        Wytyczne wytyczne = new Wytyczne();
+//        for(int i=1;i<10000;i++) {
+//            try {
+//                int lek = (int) (Math.random() * 599 + 1);
+//                wytyczne.setIdLekarstwa(lek);
+//                int rec = (int) (Math.random() * 14000 + 1);
+//                wytyczne.setIdRecepty(rec);
+//                wytyczne.setIloscLeku(amount.get((int) (Math.random() * 39 + 1)));
+//                wytyczne.setOdplatnosc(percent.get((int) (Math.random() * 19 + 1)));
+//                wytyczne.addWytyczne(connection);
+//            }catch (Exception e){
+//
+//            }
+//        }
 
-            }
-        }
+//        VisitDraw visitDraw = new VisitDraw(url, user, password);
+//        visitDraw.addVisit(100000);
     }
 }

@@ -183,4 +183,6 @@ public class Wizyta {
         preparedStatement.executeUpdate();
         System.out.println(this.toString());
     }
+
+
 }

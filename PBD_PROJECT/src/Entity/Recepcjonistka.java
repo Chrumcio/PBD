@@ -89,7 +89,7 @@ public class Recepcjonistka {
     
     public void addRecepcjonistka(Connection con) {
     	String query = "INSERT INTO recepcjonistka(idrecepcjonistki, nazwisko, imie, dataurodzenia, adres, pesel) VALUES(?,?,?,?,?,?)";
-    	/*
+
     	try (PreparedStatement pst = con.prepareStatement(query)) {
               pst.setInt(1, id);
               pst.setString(2, nazwisko);
@@ -103,7 +103,7 @@ public class Recepcjonistka {
           } catch (SQLException ex) {
               ex.printStackTrace();
           }
-          */
+
     	System.out.println(this.toString());
     }
 }

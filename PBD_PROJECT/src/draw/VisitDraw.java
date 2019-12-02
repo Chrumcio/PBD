@@ -43,7 +43,7 @@ public class VisitDraw {
     public void addVisit(int visit_amount) throws SQLException {
         int lastId = getLastId() +1;
         for(int i=0; i<visit_amount; i++){
-            drawVisit(lastId+i).addWizyta(connection);
+            drawVisit(lastId + 1 +i).addWizyta(connection);
         }
     }
 
@@ -68,21 +68,14 @@ public class VisitDraw {
         int prescription = prescription_list.get(random_prescription_index);
         int receptionist = receptionist_list.get(random_receptionist_index);
 
+
         Date date = drawDate();
         Time time = new Time(20,15,15);
         String comment = "komentarz";
 
         return new Wizyta(id,date,time,type,status,nurse,doctor,room,prescription,receptionist,patient,diagnostic,comment);
     }
-    private List<Integer> getInstrumentsList() throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM przyrzad_medyczny");
-        ResultSet resultSet = preparedStatement.executeQuery();
-        List<Integer> instruments_id = new ArrayList<>();
-        while (resultSet.next()) {
-            instruments_id.add(resultSet.getInt(1));
-        }
-        return instruments_id;
-    }
+
 
     private List<Integer> getDoctorList() throws SQLException {
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM lekarz");

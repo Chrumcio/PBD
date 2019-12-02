@@ -46,7 +46,7 @@ public class RecepcionistsDraw {
 			
 			
 			for(int i=0;i<ile;i++ ) {
-				Recepcjonistka recepcjonistka = randRecepcjonistka(lastId+1);
+				Recepcjonistka recepcjonistka = randRecepcjonistka(lastId+1 + i );
 				recepcjonistka.addRecepcjonistka(con);
 			}
 		}

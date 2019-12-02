@@ -32,7 +32,9 @@ public class CONST {
 	public static String statusUrl = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\status.txt";
 	public static String typeOfVisitsUrl = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfVisits.txt";
 	public static String typeOfRoomUrl = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\typeOfRooms.txt";
-	
+	public static String amountOfMedicine = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\amountOfMedicine.txt";
+	public static String Percents = "C:\\Users\\dell\\Documents\\PBD\\PBD_PROJECT\\src\\textfile\\Percents.txt";
+
 	//Mateusz L
 	public static String url = "jdbc:postgresql://localhost/przychodnia";
     public static String user = "postgres";
