@@ -73,7 +73,7 @@ public class Main {
         Connection connection = DriverManager.getConnection(url,user,password);
 
         UpdateVisit updateVisit = new UpdateVisit(connection);
-        Date date = new Date(2012,12,12);
+        Date date = new Date(2000,12,12);
         updateVisit.updateWizytaDate(1,date);
 //        PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM przyrzad_medyczny");
 //        preparedStatement.execute();
