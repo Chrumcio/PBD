@@ -184,7 +184,7 @@ public class Historia_Wizyt {
     }
 
     public void addHistoriaWizyty(Connection connection) throws SQLException {
-        String query = "INSERT INTO wizyta(idwizyty, datawizyty ,godzinawizyty ," +
+        String query = "INSERT INTO historia_wizyt(idwizyty, datawizyty ,godzinawizyty ," +
                 "rodzajwizyty ,idstatusu ,idpielegniarki ,idlekarza ,numergabinetu ," +
                 "idrecepty ,idrecepcjonistki ,idpacjenta,iddiagnostyki, komentarz, row_key, create_date) " +
                 "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
