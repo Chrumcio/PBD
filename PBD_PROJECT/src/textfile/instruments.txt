@@ -1,0 +1,151 @@
+Ampułkostrzykawka
+Anomaloskop
+Aparat halo
+Aparat Ilizarowa
+Aparat rentgenowski
+Artykulator
+Asystor
+Audiogram
+Audiometr
+Automatyczny defibrylator zewnętrzny
+Autostrzykawka
+Basen (naczynie)
+Biomateriał
+Bomba kobaltowa
+Burdizzo
+Cefaly
+Cell saver
+Cewnik Foleya
+Cewnik Swana-Ganza
+Cewnik Tenckhoffa
+Ciągłe pozaustrojowe natlenianie krwi
+Combitube
+CPAP
+Defibrylator
+Deska ortopedyczna
+Diafanoskop
+Drut Kirschnera
+Egzoftalometr Hertla
+Elektrokauter
+EpiPen
+Ergometr
+Estezjometr
+Eza
+Fantom (medycyna)
+Glukometr
+Gruszka (medycyna)
+Gwóźdź chirurgiczny
+Hak chirurgiczny
+Hak Farabeufa
+Igła (medycyna)
+Igła Veresa
+Imadło chirurgiczne
+Inhalator
+Inkubator
+Insuflator
+Irygator
+Kaftan bezpieczeństwa
+Kamizelka defibrylująca
+Kamizelka Kendricka
+Kaniula dożylna
+Kaniula tętnicza
+Kanka
+Kapsułka Crosby’ego
+Keratometr
+Keratoskop
+Kimograf
+Kleszczyki chirurgiczne
+Koflator
+Koło porodowe
+Komora dekompresyjna
+Komora inhalacyjna
+Koncentrator tlenu
+Kranioklast
+Krępulec (opaska uciskowa)
+Krzesełko kardiologiczne
+Krzesło porodowe
+Kula (rehabilitacja)
+Kulociąg
+Laboratorium chipowe
+Lampa rentgenowska
+Lampa Wooda
+Laseroterapia
+Maska krtaniowa
+Maska tlenowa
+Miednicomierz
+Miernik ciśnienia zwieracza ust przełyku
+Mikrotom
+Mikrotom laserowy
+Młotek neurologiczny
+Mokry opatrunek
+Monitorowanie EKG metodą Holtera
+Negatoskop
+Nosze miękkie
+Nóż gamma
+Nóż Tobolda
+Obuwie ortopedyczne
+Oftalmodynamometr
+Oftalmoskop
+Opaska uciskowa
+Opatrunek
+Opatrunek gipsowy
+Opatrunek indywidualny
+Opatrunek uciskowy
+Orchidometr
+Orteza
+Ortopantomograf
+Otoskop
+Palestezjometr
+Pas brzuszny
+Pessarium
+Piła oscylacyjna
+Piłka lekarska
+Pinceta
+Płytka stymulacyjna
+Podoskop
+Podwójna parasolka Rashkinda
+Pompa infuzyjna
+Pompa insulinowa
+Port naczyniowy
+Promiennik podczerwieni
+Proteza
+Proteza naczyniowa
+Przeciwwstrząsowe spodnie pneumatyczne
+Pulsoksymetr
+Pulsometr
+Respimat
+Respirator (medycyna)
+Resusci Anne
+Rękawiczki medyczne
+Rozszerzadło Hegara
+Rurka intubacyjna
+Rurka krtaniowa
+Rurka tracheotomijna
+Samorozprężalne metalowe stenty
+Separator komórkowy
+Sfigmomanometr
+Skalpel
+Spirometr
+Staza taktyczna
+Stetoskop
+Stetoskop położniczy
+Strzykawka
+Strzykawka bezigłowa
+Szpatułka
+Sztyft do nosa
+Talerze amputacyjne
+Tampon
+Tonometr Schiøtza
+Tupfer
+Unguator
+Urometr
+Włókno monofilament
+Worek samorozprężalny
+Wózek szpitalny
+Wstrzykiwacz insuliny
+Wszczepialny rejestrator arytmii
+Zaawansowana symulacja medyczna
+Zewnętrzny dren komorowy
+Zgłębnik Lintona-Nachlasa
+Zgłębnik Sengstakena-Blakemore’a
+Żelazne płuco

@@ -1,0 +1,175 @@
+Ulica 1 Maja
+Ulica 3 Maja
+Ulica 11 Listopada
+Ulica Akademicka
+Ulica gen. Władysława Andersa
+Ulica Armii Krajowej
+Ulica Balonowa
+Ulica Bankowa
+Ulica Józefa Bema
+Ulica Bernardyńska
+Ulica Beskidzka
+Ulica Białoskórnicza
+Ulica Bielska
+Ulica Bohaterów Monte Cassino
+Ulica Bożego Ciała
+Ulica Bracka
+Ulica Browarna
+Ulica Brzeska
+Ulica Bytomska
+Ulica Chłodna
+Ulica Chmielna
+Ulica Fryderyka Chopina
+Ulica Chorzowska
+Ulica Bolesława Chrobrego
+Ulica Ciasna
+Ulica Stefana Czarnieckiego
+Ulica Częstochowska
+Ulica Jana Henryka Dąbrowskiego
+Ulica Długa
+Ulica Dworcowa
+Ulica Fabryczna
+Ulica Floriańska
+Ulica Franciszkańska
+Ulica Francuska
+Ulica Aleksandra Fredry
+Ulica Garbarska
+Ulica Gdańska
+Ulica Gliwicka
+Ulica Bartosza Głowackiego
+Ulica Gnieźnieńska
+Ulica Gołębia
+Ulica Górnośląska
+Ulica Graniczna
+Ulica Grodzka
+Ulica Artura Grottgera
+Ulica Grunwaldzka
+Ulica Hallera
+Ulica Hetmańska
+Ulica Hrubieszowska
+Ulica Świętego Idziego
+Ulica Jagiellońska
+Ulica Jana Pawła II
+Ulica Jana z Kolna
+Ulica Wincentego Janasa
+Ulica Jezuicka
+Ulica Kamienna
+Ulica Kanonia
+Ulica Karmelicka
+Ulica Jana Kasprowicza
+Ulica Katedralna
+Ulica Katowicka
+Ulica Kijowska
+Ulica Jana Kilińskiego
+Ulica Klasztorna
+Ulica Kolejowa
+Ulica Mikołaja Kopernika
+Ulica Janusza Korczaka
+Ulica Tadeusza Kościuszki
+Ulica Krakowska
+Ulica Królewska
+Ulica Królowej Jadwigi
+Ulica Krucza
+Ulica Krupnicza
+Ulica Lechicka
+Aleja Legionów
+Ulica Legionów
+Ulica Bolesława Limanowskiego
+Ulica Lipowa
+Ulica Lubelska
+Ulica Lwowska
+Ulica Łąkowa
+Ulica Łódzka
+Ulica Jacka Malczewskiego
+Ulica Stanisława Małachowskiego
+Ulica Mariacka
+Ulica Adama Mickiewicza
+Ulica Mikołowska
+Ulica Miodowa
+Ulica Młyńska
+Ulica Stanisława Moniuszki
+Ulica Mostowa
+Ulica Gabriela Narutowicza
+Aleja Niepodległości
+Ulica Niestachowska
+Ulica Nowa
+Ulica Obornicka
+Ulica Obozowa
+Ulica Ogrodowa
+Ulica Okopowa
+Ulica Karola Olszewskiego
+Ulica Opolska
+Ulica Oświęcimska
+Ulica Ignacego Paderewskiego
+Ulica Partyzantów
+Ulica Piekarska
+Ulica Piękna
+Ulica Józefa Piłsudskiego
+Ulica Piwna
+Ulica Pocztowa
+Ulica Pomorska
+Ulica Józefa Poniatowskiego
+Ulica ks. Jerzego Popiełuszki
+Ulica Poznańska
+Ulica Północna
+Ulica Prudnicka
+Ulica Bolesława Prusa
+Ulica Kazimierza Pułaskiego
+Ulica Puławska
+Ulica Racławicka
+Ulica Rajska
+Ulica Mikołaja Reja
+Ulica Władysława Reymonta
+Ulica Sandomierska
+Ulica Senatorska
+Ulica Siemianowicka
+Ulica Henryka Sienkiewicza
+Ulica Sienna
+Ulica Władysława Sikorskiego
+Ulica Piotra Skargi
+Ulica Juliusza Słowackiego
+Ulica Jana III Sobieskiego
+Aleja Solidarności
+Ulica Starowiejska
+Ulica Stefana Starzyńskiego
+Ulica Stanisława Staszica
+Ulica Andrzeja Struga
+Ulica Strzelecka
+Ulica Wita Stwosza
+Ulica Szczecińska
+Ulica Szeroka
+Ulica Szewska
+Ulica Szpitalna
+Ulica Śląska
+Ulica św. Barbary
+Ulica św. Ducha
+Ulica św. Jana
+Ulica Karola Świerczewskiego
+Ulica Świętojańska
+Ulica Świętokrzyska
+Ulica Tamka
+Ulica Targowa
+Ulica Teatralna
+Ulica Toruńska
+Ulica Towarowa
+Ulica Juliana Tuwima
+Ulica Uniwersytecka
+Ulica Wałowa
+Ulica Warszawska
+Ulica Wawelska
+Ulica Widok
+Ulica Wiejska
+Ulica Wincentego Witosa
+Ulica Wojska Polskiego
+Aleja Wolności
+Ulica Wolności
+Ulica Wrocławska
+Ulica Stefana Wyszyńskiego
+Ulica Zachodnia
+Ulica Zamkowa
+Ulica Złota
+Ulica Zwierzyniecka
+Ulica Zwycięstwa
+Ulica Żeglarska
+Ulica Stefana Żeromskiego
+Ulica Żytnia
