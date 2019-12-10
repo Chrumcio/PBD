@@ -7,7 +7,7 @@ public class Historia_Wizyt {
     private int row_key;
     private int id;
     private Date data;
-    private Date createDate;
+    private Timestamp createDate;
     private Time time;
     private String rodzaj;
     private int idStatusu;
@@ -25,7 +25,7 @@ public class Historia_Wizyt {
 
     public Historia_Wizyt(int id, Date data, Time time, String rodzaj, int idStatusu, int idPielegniarki, int idLekarza,
                           int gabinet, int idRecepty, int idRecepcjonistki, int idPacjenta
-            , String idDiagnostyki, String komenatrz, int row_key, Date createDate) {
+            , String idDiagnostyki, String komenatrz, int row_key, Timestamp createDate) {
         this.row_key = row_key;
         this.id = id;
         this.data = data;
@@ -51,11 +51,11 @@ public class Historia_Wizyt {
         this.row_key = row_key;
     }
 
-    public Date getCreateDate() {
+    public Timestamp getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(Timestamp createDate) {
         this.createDate = createDate;
     }
 
@@ -200,10 +200,10 @@ public class Historia_Wizyt {
         preparedStatement.setInt(9,idRecepty);
         preparedStatement.setInt(10,idRecepcjonistki);
         preparedStatement.setInt(11,idPacjenta);
-        preparedStatement.setString(12,idDiagnostyki);
-        preparedStatement.setString(13, komenatrz);
+        preparedStatement.setString(13,idDiagnostyki);
+        preparedStatement.setString(12, komenatrz);
         preparedStatement.setInt(14,row_key);
-        preparedStatement.setDate(15,createDate);
+        preparedStatement.setTimestamp(15,createDate);
         preparedStatement.executeUpdate();
         System.out.println(this.toString());
     }

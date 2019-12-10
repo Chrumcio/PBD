@@ -28,7 +28,7 @@ public class UpdateVisit {
 
     private Historia_Wizyt addVisitHistory(int id) throws SQLException {
         int lastId = getLastId()+1;
-        Date last_date = convertUtilToSql(new java.util.Date());
+        Timestamp last_date = new Timestamp(System.currentTimeMillis());
         PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM wizyta WHERE idwizyty="+id);
         ResultSet resultSet = preparedStatement.executeQuery();
         resultSet.next();
